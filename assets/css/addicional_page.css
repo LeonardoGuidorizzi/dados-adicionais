@@ -60,6 +60,42 @@ main {
   height: 100%;
   width: 100%;
 }
+#picture__input {
+  display: none;
+}
+
+.picture {
+  width: 400px;
+  aspect-ratio: 16/9;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: sans-serif;
+  transition: color 300ms ease-in-out 300ms ease-in-out;
+  outline: none;
+  overflow: hidden;
+}
+i.fa-camera {
+  margin: 10px;
+  cursor: pointer;
+  font-size: 7rem;
+  color: black;
+
+}
+
+.picture:focus {
+  background: #eee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.picture__img {
+  max-width: 100%;
+}
+
 
 .input_container,
 label {
