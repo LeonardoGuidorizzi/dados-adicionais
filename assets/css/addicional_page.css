@@ -1,3 +1,6 @@
+@import url(./reset.css);
+
+
 /*main-container*/
 
 .container {
@@ -27,8 +30,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
-
+  padding: 50px;
 }
 
 .header_button {
@@ -75,7 +77,6 @@ main {
   border-radius: 10px;
   cursor: pointer;
   font-family: sans-serif;
-  transition: color 300ms ease-in-out 300ms ease-in-out;
   outline: none;
   overflow: hidden;
 }
@@ -143,3 +144,132 @@ input {
   display: flex;
   padding-top: 20px;
 }
+
+@media (max-width:1366px){
+  .header{
+    padding: 10px;
+  }
+  main{
+    height: 45%;
+  }
+  .inpuct-picture-container{
+    margin-bottom: 1rem;
+  }
+  .picture{
+    height: 10rem;
+  }
+  input{
+    height: 2rem;
+  }
+
+  .button_container {
+    display: flex;
+    padding-top: 0px;
+}
+}
+
+
+@media (max-width:1024px) {
+  body{
+    width: 100%;
+} 
+  input{
+    width: 40vw;  
+}
+}
+
+@media (max-width:375px) {
+  header{
+    padding: 10px;
+  }
+  .picture{
+    width: 15rem;
+  }
+
+  .container_four_inputs{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    margin-bottom: 0;
+    gap: 0;
+  }
+
+  .button_container{
+    margin-top: 20px;
+
+  }
+
+  .input{
+    padding: 10px;
+  }
+
+}
+
+@media(max-width:667px){
+  main{
+    height: 100%;
+  }
+
+  header{
+   margin-top: 10px;
+   padding: 0;
+  }
+  .logo_container{
+    margin-left: 10px;
+  }
+
+  .button{
+    margin-left: 10px;
+
+   }
+  .picture{
+    height: 7rem;
+    width: 10rem;
+  }
+
+  .input_picture_container{
+      margin-bottom: 0;
+  }
+  .input{
+    height: 0.5vh;
+    width: 40vw;
+  }
+
+
+
+}
+
+@media (max-width:414px) {
+  .container_four_inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: small;
+  }
+
+  .input{
+    width: 70vw;
+  }
+}
+
+@media (max-width:768px) {
+  main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+@media (max-width:896px) {
+  body{
+    height: 100%;
+  }
+
+  .input{
+    padding: 0;
+  }
+  .container_four_inputs{
+    width: 10hw;
+  }
+}
+

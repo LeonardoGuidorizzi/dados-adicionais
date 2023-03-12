@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <script src="./assets/js/photoarea.js" defer type="module"></script>
     <script src="https://kit.fontawesome.com/2bbeedebb6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <title>Dados-adicionais</title>
 </head>
@@ -17,7 +19,16 @@
     <div class="container">
         <header>
             <a class="logo_container" href="../index.html">
-                <img class="logo" src="./assets/img/logo-light 1 (1).svg" alt="Logo da Vanbora">
+                <div class="logo-content">
+                    <div class="ball">
+                        <span class="material-symbols-outlined">
+                            airport_shuttle
+                        </span>
+                    </div>
+                    <div class="name_logo_container">
+                        <span class="name">Vanbora</span>
+                    </div>
+                </div>
             </a>
             <button id="go_back_button" class="header_button" type="button">Voltar</button>
         </header>
@@ -38,15 +49,15 @@
                     <div class="rg_cpf_container">
                         <div class="input_container">
                             <label for="RG" class="placeholder">RG:</label>
-                            <input class="input" type="number" id="inputRG" required>
+                            <input class="input" type="text" id="inputRG" required>
                         </div>
                         <div class="input_container">
                             <label for="cpf" class="placeholder">CPF:</label>
-                            <input class="input" type="number" id="inputCpf" required>
+                            <input class="input" type="text" id="inputCpf" required>
                         </div>
                         <div class="input_container">
                             <label for="telephone" class="placeholder">Telefone:</label>
-                            <input class="input" type="number" id="inputTelephone" required>
+                            <input class="input" type="text" id="inputTelephone" required>
                         </div>
                     </div>
 
@@ -56,7 +67,7 @@
                             <input class="input" type="text" id="inputBirthDate" required>
                         </div>
                         <div class="input_container">
-                            <label for="password" class="placeholder">CEP:</label>
+                            <label for="text_cep" class="placeholder">CEP:</label>
                             <input class="input" type="text" id="inputCep" required>
                         </div>
                         <div class="input_container">
@@ -65,8 +76,6 @@
                         </div>
                     </div>
                 </div>
-
-
 
                 <div class="button_container">
                     <button id="button_form" class="button_save" type="button">Salvar</button>
